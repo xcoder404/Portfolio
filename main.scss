@@ -1,0 +1,32 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+$font-family-sans-serif: 'Poppins', sans-serif;
+$primary:#fe782b;
+$secondary:#ac7e66;
+$body-bg-tertiary: #bfbfbf;
+
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "scss/bootstrap";
+
+// Then add additional custom code here
+
+#home{
+    background-image: url('images/clark-tibbs-oqStl2L5oxI-unsplash.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background:rgba(0,0,0,0.8);
+    }
+}
+
+
+
